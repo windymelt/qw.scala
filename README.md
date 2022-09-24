@@ -1,4 +1,4 @@
-## qw.scala
+## qw.scala [![CI](https://github.com/windymelt/qw.scala/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/windymelt/qw.scala/actions/workflows/ci.yaml)
 
 This library ports `qw()` syntax from Perl.
 
