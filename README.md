@@ -19,6 +19,17 @@ val lis: List[String] = qw"You can save time from double-quotation hell"
 // => List("You", "can", "save", "time", "from", "double-quotation", "hell")
 ```
 
+You can express list via multi-line:
+
+```scala
+val lis = qw"""
+a b
+c d
+e f
+"""
+// => List("a", "b", "c", "d", "e", "f")
+```
+
 #### Advanced usage
 
 You can embed `String` variable into notation:
