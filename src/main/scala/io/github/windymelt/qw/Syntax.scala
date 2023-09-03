@@ -1,7 +1,27 @@
 package io.github.windymelt.qw
 
+/** Enables qw syntax for string.
+  *
+  * {{{
+  * import io.github.windymelt.qw.Syntax.*
+  * qw"foo bar buzz" // => "foo" :: "bar" :: "buzz" :: Nil
+  * }}}
+  *
+  * You can use newline for separator too:
+  *
+  * {{{
+  * qw"""
+  * new
+  * line
+  * separated
+  * """ // => "new" :: "line" :: "separated" :: Nil
+  * }}}
+  */
 object Syntax:
   extension (sc: StringContext)
+    /** Splits strings with whitespace character and constructs
+      * [[List[String]]].
+      */
     def qw(args: String*): List[String] =
       val strings = sc.parts.iterator
       val expressions = args.iterator
