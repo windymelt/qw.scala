@@ -1,4 +1,4 @@
-package com.github.windymelt.qw
+package io.github.windymelt.qw
 
 // For more information on writing tests, see
 // https://scalameta.org/munit/docs/getting-started.html

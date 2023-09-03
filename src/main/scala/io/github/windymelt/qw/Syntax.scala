@@ -1,4 +1,4 @@
-package com.github.windymelt.qw
+package io.github.windymelt.qw
 
 object Syntax:
   extension (sc: StringContext)
