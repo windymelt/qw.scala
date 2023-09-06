@@ -7,6 +7,7 @@ import publish._
 object qw extends RootModule with ScalaModule with PublishModule {
   def scalaVersion = "3.3.0"
 
+  override def artifactName = "qw"
   override def sonatypeUri = "https://s01.oss.sonatype.org/service/local"
   override def sonatypeSnapshotUri =
     "https://s01.oss.sonatype.org/content/repositories/snapshots"
