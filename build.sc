@@ -15,7 +15,7 @@ object qw extends RootModule with ScalaModule with PublishModule {
     description = artifactName(),
     organization = "io.github.windymelt",
     url = "https://github.com/windymelt/qw.scala",
-    licenses = Seq(License.MIT),
+    licenses = Seq(License.`BSD-3-Clause`),
     versionControl = VersionControl.github("windymelt", "qw.scala"),
     developers = Seq(
       Developer("windymelt", "windymelt", "https://github.com/windymelt")
