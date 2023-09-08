@@ -8,12 +8,29 @@ You can save time from double quotation hell when coding long `String` list.
 
 Usage is very simple!
 
+#### Dependency
+
+Check out latest version → [![qw Scala version support](https://index.scala-lang.org/windymelt/qw.scala/qw/latest-by-scala-version.svg?platform=jvm)](https://index.scala-lang.org/windymelt/qw.scala/qw)
+
+```scala
+val qwVersion = "0.1.4"
+
+// for sbt
+libraryDependencies += "io.github.windymelt" %% "qw" % "0.1.4"
+
+// for Mill
+ivy"io.github.windymelt::qw:0.1.4"
+
+// for Scala CLI
+//> using dep "io.github.windymelt::qw:0.1.4"
+```
+
 #### Basic usage
 
 Instead of writing `List[String](...)` directly, you can express it writing space-separated string:
 
 ```scala
-import com.github.windymelt.qw.Syntax._
+import com.github.windymelt.qw.Syntax.{*, given}
 
 val lis: List[String] = qw"You can save time from double-quotation hell"
 // => List("You", "can", "save", "time", "from", "double-quotation", "hell")
@@ -35,7 +52,7 @@ e f
 You can embed `String` variable into notation:
 
 ```scala
-import com.github.windymelt.qw.Syntax._
+import com.github.windymelt.qw.Syntax.{*, given}
 
 val (x, y, z) = ("a", "b", "c")
 
