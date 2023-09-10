@@ -3,7 +3,7 @@ package io.github.windymelt.qw
 /** Enables qw syntax for string.
   *
   * {{{
-  * import io.github.windymelt.qw.Syntax.*
+  * import io.github.windymelt.qw.Syntax.{*, given}
   * qw"foo bar buzz" // => "foo" :: "bar" :: "buzz" :: Nil
   * }}}
   *
