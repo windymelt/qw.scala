@@ -13,16 +13,15 @@ Usage is very simple!
 Check out latest version → [![qw Scala version support](https://index.scala-lang.org/windymelt/qw.scala/qw/latest-by-scala-version.svg?platform=jvm)](https://index.scala-lang.org/windymelt/qw.scala/qw)
 
 ```scala
-val qwVersion = "0.1.4"
-
 // for sbt
-libraryDependencies += "io.github.windymelt" %% "qw" % "0.1.4"
+val qwVersion = "0.1.5"
+libraryDependencies += "io.github.windymelt" %% "qw" % qwVersion
 
 // for Mill
-ivy"io.github.windymelt::qw:0.1.4"
+ivy"io.github.windymelt::qw:0.1.5"
 
 // for Scala CLI
-//> using dep "io.github.windymelt::qw:0.1.4"
+//> using dep "io.github.windymelt::qw:0.1.5"
 ```
 
 #### Basic usage
