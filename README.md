@@ -30,7 +30,7 @@ ivy"io.github.windymelt::qw:0.1.4"
 Instead of writing `List[String](...)` directly, you can express it writing space-separated string:
 
 ```scala
-import com.github.windymelt.qw.Syntax.{*, given}
+import io.github.windymelt.qw.Syntax.{*, given}
 
 val lis: List[String] = qw"You can save time from double-quotation hell"
 // => List("You", "can", "save", "time", "from", "double-quotation", "hell")
@@ -52,7 +52,7 @@ e f
 You can embed `String` variable into notation:
 
 ```scala
-import com.github.windymelt.qw.Syntax.{*, given}
+import io.github.windymelt.qw.Syntax.{*, given}
 
 val (x, y, z) = ("a", "b", "c")
 
