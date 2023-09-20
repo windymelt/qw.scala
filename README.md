@@ -1,4 +1,4 @@
-## qw.scala [![CI](https://github.com/windymelt/qw.scala/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/windymelt/qw.scala/actions/workflows/ci.yaml) [![qw Scala version support](https://index.scala-lang.org/windymelt/qw.scala/qw/latest-by-scala-version.svg?platform=jvm)](https://index.scala-lang.org/windymelt/qw.scala/qw)
+## qw.scala [![CI](https://github.com/windymelt/qw.scala/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/windymelt/qw.scala/actions/workflows/ci.yaml) [![qw Scala version support](https://index.scala-lang.org/windymelt/qw.scala/qw/latest-by-scala-version.svg?platform=jvm)](https://index.scala-lang.org/windymelt/qw.scala/qw) [![scaladoc](https://javadoc.io/badge2/io.github.windymelt/qw_3/scaladoc.svg)](https://javadoc.io/doc/io.github.windymelt/qw_3)
 
 This library ports `qw()` syntax from Perl.
 
