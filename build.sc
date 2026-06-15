@@ -5,7 +5,7 @@ import mill._, scalalib._
 import publish._
 
 object qw extends RootModule with ScalaModule with PublishModule {
-  def scalaVersion = "3.3.0"
+  def scalaVersion = "3.3.8"
 
   override def artifactName = "qw"
   override def sonatypeUri = "https://s01.oss.sonatype.org/service/local"
@@ -26,4 +26,5 @@ object qw extends RootModule with ScalaModule with PublishModule {
   object test extends ScalaTests with TestModule.Munit {
     def ivyDeps = Agg(ivy"org.scalameta::munit::0.7.29")
   }
+  override def scalacOptions = super.scalacOptions() ++ Seq("-Yfuture-lazy-vals", "-java-output-version:11")
 }
